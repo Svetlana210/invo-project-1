@@ -1,0 +1,26 @@
+.container {
+  margin-top: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    // @media screen and (min-width: 768px) {
+
+    margin-top: 247px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // display: flex;
+    // gap: 109px;
+    margin-top: 159px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 109px;
+    margin-right: 152px;
+    margin-left: 152px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

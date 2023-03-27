@@ -1,0 +1,140 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+.container-text {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-text__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.2%;
+  margin-bottom: 16px;
+}
+.container-text__paragraph {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-cards {
+  max-width: 343px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-cards-list {
+  margin-top: 24px;
+}
+.container-cards-item {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-item-background);
+  border-radius: 24px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.container-cards-item__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.container-cards-item__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-cards-text);
+}
+.container-cards-item__logo {
+  width: 28px;
+  height: 28px;
+  padding: 14px;
+  border-radius: 16px;
+  &.first {
+    background-color: var(--back-color-icon-pink);
+  }
+  &.second {
+    background-color: var(--back-color-icon-blue);
+  }
+  &.third {
+    background-color: var(--back-color-icon-light-blue);
+  }
+  &.fourth {
+    background-color: var(--back-color-icon-yellow);
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-text {
+    max-width: 496px;
+  }
+
+  .container-text__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+  .container-cards {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-cards-list {
+    margin-top: 24;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  .container-cards-item {
+    max-width: 209px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 17px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-text__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+  .container-text {
+    max-width: 467px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .container-cards-list {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 31px;
+  }
+  .container-cards-item {
+    width: 236px;
+    padding: 24px 16px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+  .container-cards {
+    max-width: 560px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .container-cards-item__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container-cards-item__logo {
+    padding: 16px;
+    width: 32px;
+    height: 32px;
+  }
+}
